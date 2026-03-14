@@ -1,19 +1,48 @@
-# Container Orchestration of Dockerized Application using Kubernetes
+# Dockerized Application Deployment with Kubernetes and Jenkins CI/CD
 
-This project demonstrates deploying a Dockerized Flask application using Kubernetes.
+This project demonstrates a complete DevOps workflow including containerization, orchestration, and automated deployment.
 
-## Technologies Used
+## Project 3: Container Orchestration using Kubernetes
+
+Steps:
+1. Containerized a Flask application using Docker
+2. Pushed Docker image to Docker Hub
+3. Deployed application to Kubernetes cluster
+4. Exposed service using NodePort
+
+Tools:
 - Docker
 - Kubernetes
-- Minikube
+- Docker Hub
+
+## Project 4: Automated CI/CD Pipeline using Jenkins
+
+The deployment process is automated using Jenkins.
+
+Pipeline Workflow:
+
+Developer → GitHub → Jenkins Pipeline → Docker Build → Docker Hub → Kubernetes Deployment
+
+Pipeline Stages:
+1. Checkout code from GitHub
+2. Build Docker image
+3. Push Docker image to Docker Hub
+4. Deploy application to Kubernetes using kubectl
+
+Tools:
+- Jenkins
+- Docker
+- Kubernetes
+- GitHub
+
+## Architecture
+
+GitHub → Jenkins → Docker → Docker Hub → Kubernetes
+
+## Technologies Used
+
 - Python Flask
-
-## Steps
-1. Build Docker image
-2. Push image to Docker Hub
-3. Deploy application using Kubernetes
-4. Expose service with NodePort
-5. Access application via browser
-
-## Output
-Application successfully deployed and accessed through Kubernetes service.
+- Docker
+- Kubernetes
+- Jenkins
+- GitHub
